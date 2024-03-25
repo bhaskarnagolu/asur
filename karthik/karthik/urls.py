@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from imageupload.views import one,two
+from imageupload.views import one,two,show_images
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",one),
+    path("",show_images),
     path("hello",two)
 ]
